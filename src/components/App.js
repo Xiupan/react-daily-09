@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import '../styles/App.css';
 import {BrowserRouter, Route} from 'react-router-dom'
 import BaseLayout from './BaseLayout'
@@ -16,7 +15,8 @@ class App extends Component {
             <BaseLayout>
               <Route exact path="/" component={PostList}/>
               <Route path="/create" component={CreatePost}/>
-              <Route path="/allposts" component={PostList}/>
+              <Route exact path="/posts" component={PostList}/>
+              <Route path="/posts/:id" component={ShowPost}/>
             </BaseLayout>
           </div>
         </BrowserRouter>

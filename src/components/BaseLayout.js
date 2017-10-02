@@ -17,7 +17,7 @@ class BaseLayout extends Component {
               Create Post
             </li>
             </NavLink>
-            <NavLink to="/allposts">
+            <NavLink to="/posts">
             <li className="nav-link">
               Show All Posts
             </li>
